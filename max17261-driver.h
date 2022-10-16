@@ -12,10 +12,12 @@ class cMax17261 : public PollingComponent, public Sensor
 private:
 int getBatterySOC()
 {
+	return 0;
 }
 
 bool getChDc()
 {
+	return 0;
 }
 
 
@@ -33,10 +35,7 @@ void setup() override
 
 void update() override
 {
-	void update() override
-	{
-		publish_state(42.0);
-	}
+	publish_state(42.0);
 }
 	
-}
+};
